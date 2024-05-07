@@ -13,3 +13,5 @@ Temperature = Dimension("temperature", "\u03F4")
 ChemicalAmount = Dimension("chemical amount", "N")
 LuminousIntensity = Dimension("luminous intensity", "J")
 
+## Derived dimensions:
+Frequency = Time**-1

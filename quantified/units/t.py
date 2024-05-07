@@ -42,6 +42,12 @@ class AffineConversion(Conversion):
 
 
 
+
+
+
+
+
+
 # length.set_base("meter", "m")
 # length.add_units("foot", "ft", LinearConversion(3.28084))
 
@@ -57,3 +63,91 @@ b = AffineConversion(-273.15)
 
 print(a.to_base(feet))
 print(b.to_base(celcius))
+
+
+# Dimension:
+# Type: <base or derived>
+# Name: <name> <?base_names?>
+# Symbol: <symbol> <?base_symbols?>
+# Base Units: <name> <symbol>
+
+## Examples:
+
+# Dimension:
+# Type: base
+# Name: length
+# Symbol: L
+# Base Units: meters (m)
+
+# Dimension:
+# Type: derived
+# Name: velocity (length / time)
+# Symbol: L / T
+# Base Units: meters per second (m/s)
+
+
+
+
+
+
+# Atomic Units:
+# Type: <base or derived>
+# Name: <name>
+# Symbol: <symbol> <?base_symbols?>
+
+## Examples
+
+# Atomic Units:
+# Type: base
+# Name: meter(s)
+# Symbol: m
+
+# Atomic Units:
+# Type: base
+# Name: foot / feet
+# Symbol: ft
+
+# Atomic Units:
+# Type: derived
+# Name: newton(s)
+# Symbol: N (kg m / s^2)
+
+
+
+
+# Composite Units:
+# Type: <base or derived>
+# Name: <base names>
+# Symbol: <symbol> <base symbols>
+
+
+
+
+
+
+# Units:
+# Type: <atomic or composite>
+# Name: <atomic name or ???>
+# Symbol: <atomic symbol or ???>
+
+
+## Examples:
+# Units:
+# Type: Atomic (Base)
+# Name: meter(s)
+# Symbol: m
+
+# Units:
+# Type: Atomic (Derived)
+# Name: newton(s)
+# Symbol: N (kg m / s^2)
+
+# Units:
+# Type: Composite (Base)
+# Name: meter(s) per second
+# Symbol: m / s
+
+# Units:
+# Type: Composite (Derived)
+# Name: newton second(s)
+# Symbol: N s (kg m / s)

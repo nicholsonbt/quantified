@@ -1,15 +1,63 @@
 from typing import Union, Optional, overload, Dict
 from numbers import Number
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class AtomicUnits:
     def __init__(self, name: str, symbol: str):
         pass
+
+    @property
+    def name(self):
+        pass
+
+    @property
+    def plural(self):
+        pass
+
+
 
 
 
 class Dimension:
     def __init__(self, name):
         self._name = name
+
+
+    @property
+    def name(self):
+        pass
+
+    @property
+    def symbol(self):
+        pass
 
 
 
